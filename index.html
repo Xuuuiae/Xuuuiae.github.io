@@ -155,6 +155,163 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/06/28/%E8%BF%AA%E7%81%AB%E4%BA%8C%E9%9D%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="徐佳乐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xuuuiae">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/06/28/%E8%BF%AA%E7%81%AB%E4%BA%8C%E9%9D%A2/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-06-28 15:53:47 / 修改时间：16:03:34" itemprop="dateCreated datePublished" datetime="2024-06-28T15:53:47+08:00">2024-06-28</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="迪火二面"><a href="#迪火二面" class="headerlink" title="迪火二面"></a>迪火二面</h1><p>两个面试官，一个主管一个hr，主管有点严肃，hr挺好的，主管面我回答的不是很好。</p>
+<ol>
+<li>微服务，基座应用什么的</li>
+<li>页面一打开白屏的情况，有哪些原因，怎么排查</li>
+<li>浏览器控制台堆栈排查错误方法</li>
+<li>vue和react源码的学习</li>
+<li>项目上面遇到最难的bug</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/06/27/%E8%BF%AA%E7%81%AB%E9%9D%A2%E7%BB%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="徐佳乐">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xuuuiae">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/06/27/%E8%BF%AA%E7%81%AB%E9%9D%A2%E7%BB%8F/" class="post-title-link" itemprop="url">迪火一面</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-06-27 16:44:22 / 修改时间：21:02:26" itemprop="dateCreated datePublished" datetime="2024-06-27T16:44:22+08:00">2024-06-27</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="迪火面经"><a href="#迪火面经" class="headerlink" title="迪火面经"></a>迪火面经</h1><h4 id="面试官人不错。面试风格：一步一步挖掘，不是光八股"><a href="#面试官人不错。面试风格：一步一步挖掘，不是光八股" class="headerlink" title="面试官人不错。面试风格：一步一步挖掘，不是光八股"></a>面试官人不错。面试风格：一步一步挖掘，不是光八股</h4><ol>
+<li><p>umi-request和fetch有什么区别</p>
+</li>
+<li><p>promise中.then后面的参数</p>
+</li>
+<li><p>xhr原生请求体怎么传，头部怎么设置，设置时间</p>
+</li>
+<li><p>xhr.send()里面可以传参吗</p>
+</li>
+<li><p>如果请求阻塞，但是这个请求的资源不是页面需要的会不会影响到当前页面</p>
+</li>
+<li><pre><code class="js">console.log(3)
+setTimeout(()=&gt;&#123;
+    cosole.log(4)
+&#125;,0)
+
+new Promise(resolve).then&#123;
+    resolve()
+    console.log(1)
+&#125;.then(()=&gt;&#123;
+    console.log(5)
+&#125;)
+console.log(2)
+
+输出：3 1 2 5 4
+</code></pre>
+</li>
+</ol>
+<h2 id="查漏补缺"><a href="#查漏补缺" class="headerlink" title="查漏补缺"></a>查漏补缺</h2><ol>
+<li>fetch是原生的一个方法，如果遇到复杂的场景没有那么好处理，umi封装的里面包含很多操作，像是对报错的一些劫持，异常的处理….</li>
+<li>.then第二个参数也是传入一个函数，这是当状态为<strong>rejected</strong>(失败)时调用，正常我们是在外层方法用catch捕捉错误再执行回调</li>
+<li>在send里面可以传数据，请求头通过xhr.setHttpRequestHeader()设置，需要在open后send之前</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/06/23/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -186,7 +343,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-06-24 00:24:55" itemprop="dateModified" datetime="2024-06-24T00:24:55+08:00">2024-06-24</time>
+                <time title="修改时间：2024-06-24 19:04:15" itemprop="dateModified" datetime="2024-06-24T19:04:15+08:00">2024-06-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -222,6 +379,28 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h1>奥利给</h1>
+
+<hr>
+<p><em>一个星号是斜体</em></p>
+<p><strong>两个*加粗</strong></p>
+<p><del>两条波浪线删除线</del></p>
+<p>&#x3D;&#x3D; 高亮 &#x3D;&#x3D;</p>
+<p><code>const a = 2;</code></p>
+<p><a href="www.baidu.com">超链接</a></p>
+<p><img src="E:\图片\alg.jpg" alt="叙利亚"></p>
+<p>&#x3D;&#x3D;高亮&#x3D;&#x3D;</p>
+<p>​	</p>
+<ol>
+<li>低一点</li>
+<li>第二点</li>
+<li>第三点</li>
+</ol>
+<ul>
+<li>无需列表</li>
+<li>无需列表</li>
+</ul>
+<p>| 第一列 | 第二列 | 第三列 |</p>
 
       
     </div>
@@ -303,7 +482,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -316,7 +495,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
